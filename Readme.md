@@ -12,10 +12,10 @@ Initialized empty Git repository in path-to-repo/dumdum/.git/
 ````
 
 - git remote add origin https://github.com/mahi397/dumdum.git
-We use this to add a reference to a remote repository on GitHub.
+  We use this to add a reference to a remote repository on GitHub.
 
 - git remote -v
-Shows any remote repositories that I've connected to this repo.
+  Shows any remote repositories that I've connected to this repo.
 
 ````
 path-to-repo\dumdum (master -> origin)
@@ -43,4 +43,18 @@ remote: Resolving deltas: 100% (1/1), done.
 To https://github.com/mahi397/dumdum.git                             
  * [new branch]      master -> master                                
 Branch 'master' set up to track remote branch 'master' from 'origin'.
+````
+
+- Now git push can suffice:
+````
+path-to-repo\dumdum (master -> origin)
+λ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 877 bytes | 292.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/mahi397/dumdum.git
+   a22b10d..cf31e29  master -> master
 ````

@@ -11,11 +11,11 @@ path-to-repo\dumdum
 Initialized empty Git repository in path-to-repo/dumdum/.git/
 ````
 
-- git remote add origin https://github.com/mahi397/dumdum.git
-  We use this to add a reference to a remote repository on GitHub.
+- git remote add origin https://github.com/mahi397/dumdum.git  
+We use this to add a reference to a remote repository on GitHub.
 
-- git remote -v
-  Shows any remote repositories that I've connected to this repo.
+- git remote -v  
+Shows any remote repositories that I've connected to this repo.
 
 ````
 path-to-repo\dumdum (master -> origin)
@@ -24,10 +24,10 @@ origin  https://github.com/mahi397/dumdum.git (fetch)
 origin  https://github.com/mahi397/dumdum.git (push)
 ````
 
-- git push origin master
+- git push origin master  
 To push changes to the remote repo.
 
-- git push -u origin master
+- git push -u origin master  
 To set "upstream", meaning this is where I want to push it by default. So in future, "git push" will suffice.
 
 ````

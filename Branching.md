@@ -81,3 +81,9 @@ Fast-forward
  create mode 100644 Branching.md                                         
  ````
  
+- Deleting a branch
+````
+path-to-repo\dumdum (master -> origin)
+λ git branch -d feature-branch
+Deleted branch feature-branch (was 8f0583f).
+````

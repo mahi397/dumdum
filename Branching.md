@@ -53,7 +53,31 @@ To https://github.com/mahi397/dumdum.git
 Branch 'feature-branch' set up to track remote branch 'feature-branch' from 'origin'.
 ````
 
-- Pull Request: A request to have your code pulled into another branch.  
+## Pull Request 
+A request to have your code pulled into another branch.  
 Say we want out code pulled from feature-branch into master branch, so we make a PR from the feature-branch to the master branch.  
 Once we have made a PR, anyone can review our code, comment on it, ask us to make changes/updates.  
 Once the PR is merged, you can delete your feature-branch.
+
+- After merging PR from the feature-branch, checkout to master on local and "pull" the changes from origin to local master branch.
+- git pull origin master would be used if upstream wasn't set. Since it is, we can just do git pull.
+````
+path-to-repo\dumdum (master -> origin)                            
+λ git pull                                                               
+remote: Enumerating objects: 13, done.                                   
+remote: Counting objects: 100% (12/12), done.                            
+remote: Compressing objects: 100% (7/7), done.                           
+remote: Total 8 (delta 1), reused 0 (delta 0), pack-reused 0             
+Unpacking objects: 100% (8/8), done.                                     
+From https://github.com/mahi397/dumdum                                   
+   edb2b75..06ec2dd  master         -> origin/master                     
+   8f0583f..ffd71ab  feature-branch -> origin/feature-branch             
+Updating edb2b75..06ec2dd                                                
+Fast-forward                                                             
+ Branching.md | 59 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++                                                                    
+ Readme.md    | 14 +++++++-------                                        
+ 2 files changed, 66 insertions(+), 7 deletions(-)                       
+ create mode 100644 Branching.md                                         
+ ````
+ 
